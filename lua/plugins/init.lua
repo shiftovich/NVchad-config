@@ -10,6 +10,16 @@ return {
     opts = {
       picker = {
         enabled = true,
+        sources = {
+          files = {
+            hidden = true,
+            ignored = true,
+          },
+          grep = {
+            hidden = true,
+            ignored = true,
+          },
+        },
         layouts = {
           default = {
             layout = {
@@ -60,6 +70,11 @@ return {
           col = 1,
           style = "minimal",
         },
+      })
+
+      opts.filters = vim.tbl_deep_extend("force", opts.filters or {}, {
+        dotfiles = false,
+        git_ignored = false,
       })
     end,
   },

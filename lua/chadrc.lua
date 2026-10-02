@@ -9,8 +9,8 @@ M.base46 = {
 	theme = "carbonfox",
 
 	hl_override = {
-		Comment = { italic = true },
-		["@comment"] = { italic = true },
+		Comment = { fg = "#f2f2f2", italic = true },
+		["@comment"] = { fg = "#f2f2f2", italic = true },
 	},
 }
 
